@@ -10,8 +10,10 @@ The dataset used for the project is [CTN-0094](https://github.com/CTN-0094/publi
 ## Pipelines
 This repository contains two separate pipelines:
 - (partial) **Reimplementation of OUD predictive model in Python**:
+
   The original predictive model, initially implemented in R, has been reimplemented in Python based on the publicly available data and the descriptions provided in the JAMA paper. The original model used logistic regression; in this study, random forest showed slightly better performance compared to logistic regression.
 - **MVTS Opioid Relapse Risk Prediction Pipeline**:
+
   A new pipeline was developed to tackle the multivariate time-series forecasting task. Given the **irregularities in drug usage data**, a **long short-term memory (LSTM) model** was implemented to capture the complex patterns found in both the time-series data and static features (e.g., demographic information) to predict relapse risk more effectively. I am also exploring the potential improvement by replacing the general LSTM model with the latest revisited LSTM model ([minLSTM](https://arxiv.org/abs/2410.01201)) and lite version Transformer architecture.
 
 ## Technical support and bug report
