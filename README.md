@@ -12,11 +12,11 @@ This repository contains two separate pipelines:
 - (partial) **Reimplementation of OUD predictive model in Python**:
 
   The original predictive model, initially implemented in R, has been reimplemented in Python based on the publicly available data and the descriptions provided in the JAMA paper. The original model used logistic regression; in this study, random forest showed slightly better performance compared to logistic regression. Data processing, modeling, visualization, analysis, as well as the requirement of necessary Python libraries are all included in the Jupyter Notebook.
-- **MVTS Opioid Relapse Risk Prediction Pipeline**:
+- **MVTS Opioid Relapse Risk Prediction/Forecasting Pipeline**:
 
   A new pipeline was developed to tackle the multivariate time-series forecasting task. Given the **irregularities in drug usage data**, a **long short-term memory (LSTM) model** was implemented to capture the complex patterns found in both the time-series data and static features (e.g., demographic information) to predict relapse risk more effectively. I am also exploring the potential improvement by replacing the general LSTM model with the latest revisited LSTM model ([minLSTM](https://arxiv.org/abs/2410.01201)) and lite version Transformer architecture.
 
 ## Technical support and bug report
-The Jupyter Notebook containing the code for the OUD predictive model can be found in the `OUD_pred` folder. The MVTS predictive pipeline is not published and is intended to remain private; therefore, its code is not available in this repository.
+The Jupyter Notebook containing the code for the OUD predictive model can be found in the `OUD_pred` folder. The MVTS forecasting pipeline is not published and is intended to remain private; therefore, its code is not available in this repository.
 
-If you wish to preview the code (in Jupyter Notebook format) or report any bugs related to the OUD predictive model, please contact [Le Li](mailto:lile.moziya@gmail.com). 
+If you wish to preview the code of the MVTS forecasting pipeline (in Jupyter Notebook format) or report any bugs related to the OUD predictive model, please contact [Le Li](mailto:lile.moziya@gmail.com). 
